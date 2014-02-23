@@ -3,7 +3,6 @@ server:
     address: localhost
 
 spring:
-    profiles: dev
     datasource:
         dataSourceClassName: org.hsqldb.jdbc.JDBCDataSource
         url: jdbc:hsqldb:mem:hipste

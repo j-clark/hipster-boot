@@ -46,12 +46,6 @@ public class Application {
         SpringApplication app = new SpringApplication(Application.class);
         app.setShowBanner(false);
 
-        SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
-
-        // Check if the selected profile has been set as argument.
-        // if not the development profile will be added
-        addDefaultProfile(app, source);
-
         // Fallback to set the list of liquibase package list
         addLiquibaseScanPackages();
 
@@ -62,15 +56,6 @@ public class Application {
             JHipsterPluginManagerReloadPlugin.register(applicationContext);
         } catch (UnsupportedOperationException uoe) {
             log.info("Spring Loaded is not running, hot reloading is not enabled");
-        }
-    }
-
-    /**
-     * Set a default profile if it has not been set
-     */
-    private static void addDefaultProfile(SpringApplication app, SimpleCommandLinePropertySource source) {
-        if (!source.containsProperty("spring.profiles.active")) {
-            app.setAdditionalProfiles(Constants.SPRING_PROFILE_DEVELOPMENT);
         }
     }
 
