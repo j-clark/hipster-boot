@@ -1,0 +1,17 @@
+{
+  "name": "angular-translate-loader-static-files",
+  "version": "2.0.0",
+  "main": "./angular-translate-loader-static-files.js",
+  "dependencies": {
+    "angular-translate": "~2.0.0"
+  },
+  "gitHead": "88c85fafd8a0777368f837b18f288b5824def8ad",
+  "readme": "# bower-angular-translate-loader-static-files\n\nangular-translate-loader-static-files bower package\n\n### Installation\n\n````\n$ bower install angular-translate-loader-static-files\n````\n",
+  "readmeFilename": "README.md",
+  "_id": "angular-translate-loader-static-files@2.0.0",
+  "description": "angular-translate-loader-static-files bower package",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PascalPrecht/bower-angular-translate-loader-static-files.git"
+  }
+}

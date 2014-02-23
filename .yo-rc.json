@@ -1,0 +1,8 @@
+{
+  "generator-jhipster": {
+    "baseName": "hipste",
+    "packageName": "com.jclark.hipster",
+    "packageFolder": "com/jclark/hipster",
+    "hibernateCache": "ehcache"
+  }
+}

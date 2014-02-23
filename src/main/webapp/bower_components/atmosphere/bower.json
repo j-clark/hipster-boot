@@ -1,0 +1,14 @@
+{
+  "main": "atmosphere.js",
+  "version": "2.1.2",
+  "name": "atmosphere",
+  "gitHead": "c836fac1dfb94307a2d55319d37c1048bddcb672",
+  "readme": "bower-atmosphere\n============================\n\nThis repository is for distribution on `bower`\n\n```shell\nbower install atmosphere\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "atmosphere-js@2.1.2",
+  "description": "bower-atmosphere ============================",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Atmosphere/bower-atmosphere.git"
+  }
+}

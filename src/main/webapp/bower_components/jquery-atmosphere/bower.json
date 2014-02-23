@@ -1,0 +1,17 @@
+{
+  "main": "jquery.atmosphere.js",
+  "version": "2.1.2",
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "name": "jquery-atmosphere",
+  "gitHead": "43342fa6d8ec7440dc6c6265cb323e5fda666aec",
+  "readme": "bower-jquery-atmosphere\n============================\n\nThis repository is for distribution on `bower`\n\n```shell\nbower install jquery-atmosphere\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "atmosphere-jquery@2.1.2",
+  "description": "bower-jquery-atmosphere ============================",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flowersinthesand/bower-jquery-atmosphere.git"
+  }
+}
