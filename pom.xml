@@ -137,6 +137,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.googlecode.junit-toolbox</groupId>
+            <artifactId>junit-toolbox</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
             <groupId>com.codahale.metrics</groupId>
             <artifactId>metrics-core</artifactId>
         </dependency>
@@ -378,6 +383,16 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+
+                    <includes>
+                        <include>**/*Suite.java</include>
+                    </includes>
+
+                    <excludes>
+                        <exclude>**/*Test.java</exclude>
+                        <exclude>**/*Tests.java</exclude>
+                    </excludes>
+
                     <argLine>-XX:MaxPermSize=128m -Xmx256m</argLine>
                     <forkCount>1</forkCount>
                     <reuseForks>false</reuseForks>

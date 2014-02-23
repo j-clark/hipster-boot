@@ -18,11 +18,6 @@ import javax.inject.Inject;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Test class for the UserResource REST controller.
- *
- * @see UserService
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
