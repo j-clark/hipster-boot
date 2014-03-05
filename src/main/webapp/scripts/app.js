@@ -2,10 +2,10 @@
 
 /* App Module */
 
-var hipsteApp = angular.module('hipsteApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
+var hipsterApp = angular.module('hipsterApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
     'ngResource', 'ngRoute', 'ngCookies', 'pascalprecht.translate']);
 
-hipsteApp
+hipsterApp
     .config(['$routeProvider', '$httpProvider', '$translateProvider',  'tmhDynamicLocaleProvider',
         function ($routeProvider, $httpProvider, $translateProvider, tmhDynamicLocaleProvider) {
             $routeProvider

@@ -2,26 +2,26 @@
 
 /* Controllers */
 
-hipsteApp.controller('MainController', ['$scope',
+hipsterApp.controller('MainController', ['$scope',
     function ($scope) {
     }]);
 
-hipsteApp.controller('AdminController', ['$scope',
+hipsterApp.controller('AdminController', ['$scope',
     function ($scope) {
     }]);
 
-hipsteApp.controller('LanguageController', ['$scope', '$translate',
+hipsterApp.controller('LanguageController', ['$scope', '$translate',
     function ($scope, $translate) {
         $scope.changeLanguage = function (languageKey) {
             $translate.use(languageKey);
         };
     }]);
 
-hipsteApp.controller('MenuController', ['$scope',
+hipsterApp.controller('MenuController', ['$scope',
     function ($scope) {
     }]);
 
-hipsteApp.controller('LoginController', ['$scope', '$location', 'AuthenticationSharedService',
+hipsterApp.controller('LoginController', ['$scope', '$location', 'AuthenticationSharedService',
     function ($scope, $location, AuthenticationSharedService) {
         $scope.rememberMe = true;
         $scope.login = function () {
@@ -36,7 +36,7 @@ hipsteApp.controller('LoginController', ['$scope', '$location', 'AuthenticationS
         }
     }]);
 
-hipsteApp.controller('LogoutController', ['$location', 'AuthenticationSharedService',
+hipsterApp.controller('LogoutController', ['$location', 'AuthenticationSharedService',
     function ($location, AuthenticationSharedService) {
         AuthenticationSharedService.logout({
             success: function () {
@@ -45,7 +45,7 @@ hipsteApp.controller('LogoutController', ['$location', 'AuthenticationSharedServ
         });
     }]);
 
-hipsteApp.controller('SettingsController', ['$scope', 'Account',
+hipsterApp.controller('SettingsController', ['$scope', 'Account',
     function ($scope, Account) {
         $scope.success = null;
         $scope.error = null;
@@ -65,7 +65,7 @@ hipsteApp.controller('SettingsController', ['$scope', 'Account',
         };
     }]);
 
-hipsteApp.controller('PasswordController', ['$scope', 'Password',
+hipsterApp.controller('PasswordController', ['$scope', 'Password',
     function ($scope, Password) {
         $scope.success = null;
         $scope.error = null;
@@ -88,7 +88,7 @@ hipsteApp.controller('PasswordController', ['$scope', 'Password',
         };
     }]);
 
-hipsteApp.controller('SessionsController', ['$scope', 'resolvedSessions', 'Sessions',
+hipsterApp.controller('SessionsController', ['$scope', 'resolvedSessions', 'Sessions',
     function ($scope, resolvedSessions, Sessions) {
         $scope.success = null;
         $scope.error = null;
@@ -107,7 +107,7 @@ hipsteApp.controller('SessionsController', ['$scope', 'resolvedSessions', 'Sessi
         };
     }]);
 
- hipsteApp.controller('MetricsController', ['$scope', 'resolvedMetrics', 'HealthCheckService',
+ hipsterApp.controller('MetricsController', ['$scope', 'resolvedMetrics', 'HealthCheckService',
     function ($scope, resolvedMetrics, HealthCheckService) {
         $scope.metrics = resolvedMetrics;
 
@@ -139,7 +139,7 @@ hipsteApp.controller('SessionsController', ['$scope', 'resolvedSessions', 'Sessi
         });
     }]);
 
-hipsteApp.controller('LogsController', ['$scope', 'resolvedLogs', 'LogsService',
+hipsterApp.controller('LogsController', ['$scope', 'resolvedLogs', 'LogsService',
     function ($scope, resolvedLogs, LogsService) {
         $scope.loggers = resolvedLogs;
 
@@ -150,7 +150,7 @@ hipsteApp.controller('LogsController', ['$scope', 'resolvedLogs', 'LogsService',
         }
     }]);
 
-hipsteApp.controller('AuditsController', ['$scope', '$translate', '$filter', 'AuditsService',
+hipsterApp.controller('AuditsController', ['$scope', '$translate', '$filter', 'AuditsService',
     function ($scope, $translate, $filter, AuditsService) {
         $scope.onChangeDate = function() {
             AuditsService.findByDates($scope.fromDate, $scope.toDate).then(function(data){

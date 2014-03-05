@@ -1,2 +1,2 @@
-README for hipste
+README for hipster
 ==========================

@@ -2,33 +2,33 @@
 
 /* Services */
 
-hipsteApp.factory('Account', ['$resource',
+hipsterApp.factory('Account', ['$resource',
     function ($resource) {
         return $resource('app/rest/account', {}, {
         });
     }]);
 
-hipsteApp.factory('Password', ['$resource',
+hipsterApp.factory('Password', ['$resource',
     function ($resource) {
         return $resource('app/rest/account/change_password', {}, {
         });
     }]);
 
-hipsteApp.factory('Sessions', ['$resource',
+hipsterApp.factory('Sessions', ['$resource',
     function ($resource) {
         return $resource('app/rest/account/sessions/:series', {}, {
             'get': { method: 'GET', isArray: true}
         });
     }]);
 
-hipsteApp.factory('Metrics', ['$resource',
+hipsterApp.factory('Metrics', ['$resource',
     function ($resource) {
         return $resource('metrics/metrics', {}, {
             'get': { method: 'GET'}
         });
     }]);
 
-hipsteApp.factory('HealthCheckService', ['$rootScope', '$http',
+hipsterApp.factory('HealthCheckService', ['$rootScope', '$http',
     function ($rootScope, $http) {
         return {
             check: function() {
@@ -40,7 +40,7 @@ hipsteApp.factory('HealthCheckService', ['$rootScope', '$http',
         };
     }]);
 
-hipsteApp.factory('LogsService', ['$resource',
+hipsterApp.factory('LogsService', ['$resource',
     function ($resource) {
         return $resource('app/rest/logs', {}, {
             'findAll': { method: 'GET', isArray: true},
@@ -48,7 +48,7 @@ hipsteApp.factory('LogsService', ['$resource',
         });
     }]);
 
-hipsteApp.factory('AuditsService', ['$http',
+hipsterApp.factory('AuditsService', ['$http',
     function ($http) {
         return {
             findAll: function() {
@@ -66,7 +66,7 @@ hipsteApp.factory('AuditsService', ['$http',
         }
     }]);
 
-hipsteApp.factory('AuthenticationSharedService', ['$rootScope', '$http', 'authService',
+hipsterApp.factory('AuthenticationSharedService', ['$rootScope', '$http', 'authService',
     function ($rootScope, $http, authService) {
         return {
             authenticate: function() {

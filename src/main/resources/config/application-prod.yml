@@ -6,7 +6,7 @@ spring:
     profiles: prod
     datasource:
         dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-        url: jdbc:mysql://localhost:3306/hipste
+        url: jdbc:mysql://localhost:3306/hipster
         databaseName: 
         serverName: 
         username: root
@@ -22,10 +22,10 @@ spring:
             ddl-auto: none
             naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
         properties:
-            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_second_level_cache: false
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: false
-            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+            
             
 
     thymeleaf:
@@ -40,7 +40,4 @@ metrics:
         host:
         port:
 
-cache:
-    timeToLiveSeconds: 3600
-    ehcache:
-        maxBytesLocalHeap: 256M
+

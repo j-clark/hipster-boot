@@ -1,8 +1,6 @@
 package com.jclark.hipster.domain;
 
 
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -16,7 +14,6 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "T_AUTHORITY")
-@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class Authority implements Serializable {
 
     @NotNull

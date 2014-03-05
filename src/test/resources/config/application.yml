@@ -4,7 +4,7 @@ server:
 
 
 # security configuration (this key should be unique for your application, and kept secret)
-jhipster.security.rememberme.key: hipste
+jhipster.security.rememberme.key: hipster
 
 async:
     corePoolSize: 2
@@ -12,9 +12,10 @@ async:
     queueCapacity: 10000
 
 spring:
+  profiles: dev
   datasource:
     dataSourceClassName: org.h2.jdbcx.JdbcDataSource
-    url: jdbc:h2:mem:hipste
+    url: jdbc:h2:mem:hipster
     databaseName:
     serverName:
     username:

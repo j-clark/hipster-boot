@@ -2,7 +2,7 @@
 
 describe('Services Tests ', function () {
 
-    beforeEach(module('hipsteApp'));
+    beforeEach(module('hipsterApp'));
 
     describe('AuthenticationSharedService', function () {
         var serviceTested,

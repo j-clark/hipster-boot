@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('hipsteApp')
+angular.module('hipsterApp')
     .directive('activeMenu', ['$translate', '$locale', 'tmhDynamicLocale', function($translate, $locale, tmhDynamicLocale) {
         return {
             restrict: 'A',

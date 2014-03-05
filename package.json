@@ -1,7 +1,7 @@
 {
-  "name": "hipste",
+  "name": "hipster",
   "version": "0.0.0",
-  "description": "Description for hipste",
+  "description": "Description for hipster",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
